@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>약물 정보 검색</title>
+    <link rel="stylesheet" href="drug_search.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>약물 정보 검색</h1>
+        <p>궁금한 약의 이름을 입력하고 검색하세요.</p>
+        <div class="search-box">
+            <input type="text" id="drug-input" placeholder="예: 타이레놀">
+            <button id="search-button">검색</button>
+        </div>
+        <div id="loading-indicator" style="display: none;">
+            <p>검색 중...</p>
+        </div>
+        <div id="result-container">
+            <!-- 검색 결과가 여기에 표시됩니다. -->
+        </div>
+    </div>
+    <script src="drug_search.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의학 용어 퀴즈</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question text will go here</h2>
+                <div id="progress-container">
+                    <p id="progress-text">Question 1 / 10</p>
+                    <p id="score-text">Score: 0</p>
+                </div>
+            </div>
+            <div id="answer-container" class="answer-container">
+                <input type="text" id="answer-input" placeholder="정답을 입력하세요...">
+                <button id="submit-button" class="submit-btn">제출</button>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-button" class="next-btn">다음</button>
+        </div>
+        <div id="result-container" class="result-container" style="display: none;">
+            <h2>퀴즈 완료!</h2>
+            <p>총 <span id="total-questions"></span>문제 중 <span id="final-score"></span>문제를 맞혔습니다.</p>
+            <button id="restart-button" class="restart-btn">다시 풀기</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
